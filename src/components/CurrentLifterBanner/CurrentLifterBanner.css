@@ -1,0 +1,128 @@
+.current-lifter-banner {
+  height: 80px;
+  overflow: hidden;
+  background-color: #444444;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  width: 900px;
+  display: grid;
+  grid-template-columns: repeat(20, 5%);
+  margin-bottom: 20px;
+}
+
+.current-lifter-banner-column-one {
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.current-lifter-banner-column-one img {
+  height: 230px;
+  width: 230px;
+}
+
+.current-lifter-banner-column-two {
+  padding: 12px;
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.current-lifter-banner-name,
+.current-lifter-banner-category {
+  height: 24px;
+}
+
+/* make sure the inline-block div that react-fitty adds is centered vertically */
+.current-lifter-banner-name > div > div,
+.current-lifter-banner-category > div > div {
+  vertical-align: middle;
+}
+
+.current-lifter-banner-column-three {
+  padding: 8px;
+  grid-column: span 7;
+  overflow: hidden;
+}
+
+.current-lifter-banner-attempts {
+  display: grid;
+  grid-template-columns: 80px 60px 60px 60px;
+  column-gap: 10px;
+  align-items: center;
+  height: 100%;
+}
+
+.current-lifter-banner-lift-name {
+  height: 40px;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.current-lifter-banner-attempt {
+  height: 40px;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-lifter-banner-column-four {
+  padding: 8px;
+  grid-column: span 4;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.current-lifter-banner-attempt-current {
+  background-color: blue;
+}
+
+.current-lifter-banner-attempt-good {
+  background-color: green;
+}
+
+.current-lifter-banner-attempt-bad {
+  background-color: red;
+}
+
+.current-lifter-banner-lights {
+  width: 170px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  justify-items: center;
+  align-items: center;
+}
+
+.current-lifter-banner-light {
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
+.current-lifter-banner-light-red {
+  background-color: red;
+}
+
+.current-lifter-banner-light-white {
+  background-color: white;
+}

@@ -1,0 +1,34 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+
+  /*
+    background-color should be set to something that is easy to chroma key out.
+    orange works because it doesn't conflict with any of the colors used.
+    current lifter is often represented in blue.
+    red and green are used for bad/good lifts.
+    red, blue, and yellow are used for fault cards.
+   */
+  background-color: orange;
+}
+
+body {
+  margin: 0;
+}

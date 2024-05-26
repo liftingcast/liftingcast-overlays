@@ -1,0 +1,50 @@
+.standings {
+  padding: 20px;
+  padding-bottom: 0;
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 600px;
+  height: 690px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.standings .standings-config-bar {
+  display: grid;
+  grid-template-columns: 300px 180px 120px;
+  margin-bottom: 20px;
+}
+
+.standings .standings-category-name,
+.standings .standings-row {
+  border-radius: 12px;
+  padding: 8px;
+  overflow: hidden;
+  background-color: #444444;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 8px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.standings .standings-row {
+  display: grid;
+  grid-template-columns: 30px 200px 70px 70px 70px 100px;
+  padding-left: 20px;
+}
+
+.standings .standings-row .standing-item {
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 4px;
+  display: flex;
+  align-items: center;
+}
+
+/* make sure the inline-block div that react-fitty adds is centered vertically */
+.standings .standings-row .standing-item > div > div {
+  vertical-align: middle;
+}

@@ -1,0 +1,62 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 1260px 600px;
+  column-gap: 20px;
+  overflow: hidden;
+}
+
+.connection-info {
+  width: 1260px;
+  height: 80px;
+  border: 1px solid black;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 12px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.connection-info-first-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.sync-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.sync-indicator-connected {
+  background-color: white;
+}
+
+.sync-indicator-updating {
+  background-color: green;
+}
+
+.platform-wrapper {
+  margin-bottom: 40px;
+  height: 260px;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 940px 260px;
+  overflow: hidden;
+}
+
+.platform-wrapper .platform-name {
+  height: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+
+.platform-wrapper .platform-column-one {
+  margin-top: 10px;
+}
