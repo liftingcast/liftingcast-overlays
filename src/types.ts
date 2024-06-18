@@ -2,10 +2,40 @@ export type LiftName = "squat" | "bench" | "dead";
 export type AttemptNumber = "1" | "2" | "3";
 export type ClockState = "initial" | "started";
 
-export type LifterAttempts = Record<
-  AttemptNumber,
-  { id: string | null; weight: number | null; result: string | null }
->;
+export type RecordData = {
+  gender: string | null;
+  equipmentLevel: string | null;
+  tested: "U" | "T" | null;
+  divisionCode: string | null;
+  weightClass: string | null;
+  competitionType: "FP" | "PP" | "SL" | null;
+  lift: "S" | "B" | "D" | "T";
+  location: string | null;
+  recordWeight: number;
+};
+
+type RefDecision = {
+  decision?: "bad" | "good" | null;
+  cards?: {
+    red?: boolean;
+    blue?: boolean;
+    yellow?: boolean;
+  };
+};
+
+export type LifterAttempt = {
+  id: string | null;
+  weight: number | null;
+  result: string | null;
+  records: RecordData[];
+  decisions: {
+    left?: RefDecision;
+    head?: RefDecision;
+    right?: RefDecision;
+  } | null;
+};
+
+export type LifterAttempts = Record<AttemptNumber, LifterAttempt>;
 
 export type LifterLifts = Record<LiftName, LifterAttempts>;
 
