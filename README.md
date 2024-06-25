@@ -22,6 +22,12 @@ cp .env.sample .env
 
 Fill in your api key, meet id, and meet password.
 
+Install dependencies
+
+```
+npm install
+```
+
 Run development server with hot reloading.
 
 ```
