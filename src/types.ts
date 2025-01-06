@@ -80,6 +80,11 @@ export type Attempt = {
   };
 };
 
+export type CurrentAttempt = Attempt & {
+  ifSuccessfulPlaces?: Record<string, number>;
+  ifSuccessfulScores?: Record<string, number>;
+};
+
 export type RefLight = {
   decision?: "good" | "bad" | null;
   cards?: { red?: boolean; blue?: boolean; yellow?: boolean };
@@ -99,7 +104,7 @@ export type Platform = Record<
     clockState: ClockState | null;
     clockTimerLength: number | null;
     barAndCollarsWeight: number | null;
-    currentAttempt: Attempt | null;
+    currentAttempt: CurrentAttempt | null;
     nextAttempts: Attempt[];
     refLights: RefLights;
   }

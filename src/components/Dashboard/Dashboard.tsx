@@ -7,6 +7,9 @@ import React from "react";
 import classNames from "classnames";
 import { Clock } from "../Clock/Clock";
 import { round } from "lodash";
+import { Flag } from "../Flag/Flag";
+import { PlaceChange } from "../PlaceChange/PlaceChange";
+import { ScoreChange } from "../ScoreChange/ScoreChange";
 
 export const Dashboard = ({
   meetId,
@@ -70,11 +73,16 @@ export const Dashboard = ({
                   <div className="platform-column-one">
                     <div className="platform-name">{platform.name}</div>
                     <CurrentLifterBanner data={data} platformId={platform.id} />
-                    <Clock
-                      data={data}
-                      platformId={platform.id}
-                      latency={latency}
-                    />
+                    <div className="secondary-banner">
+                      <Clock
+                        data={data}
+                        platformId={platform.id}
+                        latency={latency}
+                      />
+                      <Flag data={data} platformId={platform.id} />
+                      <PlaceChange data={data} platformId={platform.id} />
+                      <ScoreChange data={data} platformId={platform.id} />
+                    </div>
                   </div>
                   <UpcomingLifters data={data} platformId={platform.id} />
                 </div>

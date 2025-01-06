@@ -60,3 +60,9 @@
 .platform-wrapper .platform-column-one {
   margin-top: 10px;
 }
+
+.secondary-banner {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+}

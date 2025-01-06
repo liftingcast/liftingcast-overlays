@@ -1,0 +1,13 @@
+.flag {
+  height: 58px;
+  width: 100px;
+}
+
+.flag .flag-image {
+  position: relative;
+  height: 58px;
+  width: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
