@@ -1,0 +1,15 @@
+.record-attempt {
+  height: 58px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.record-attempt .record-attempt-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

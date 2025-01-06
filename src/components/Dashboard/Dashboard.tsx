@@ -10,6 +10,7 @@ import { round } from "lodash";
 import { Flag } from "../Flag/Flag";
 import { PlaceChange } from "../PlaceChange/PlaceChange";
 import { ScoreChange } from "../ScoreChange/ScoreChange";
+import { RecordAttempt } from "../RecordAttempt/RecordAttempt";
 
 export const Dashboard = ({
   meetId,
@@ -82,6 +83,7 @@ export const Dashboard = ({
                       <Flag data={data} platformId={platform.id} />
                       <PlaceChange data={data} platformId={platform.id} />
                       <ScoreChange data={data} platformId={platform.id} />
+                      <RecordAttempt data={data} platformId={platform.id} />
                     </div>
                   </div>
                   <UpcomingLifters data={data} platformId={platform.id} />

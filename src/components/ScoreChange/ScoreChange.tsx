@@ -10,7 +10,7 @@ export const ScoreChange = ({
   platformId: string;
 }) => {
   return (
-    <div className="place-change">
+    <div className="score-change">
       <ScoreChangeInner data={data} platformId={platformId} />
     </div>
   );
@@ -48,8 +48,6 @@ const ScoreChangeInner = ({
 
   const firstDivision = data.divisions?.[firstDivisionId];
 
-  console.log(firstDivision?.scoreBy);
-
   const units =
     firstDivision?.scoreBy === "Percent of record"
       ? "%"
@@ -72,7 +70,7 @@ const ScoreChangeInner = ({
     typeof possibleScore === "string" ? possibleScore : round(possibleScore);
 
   return (
-    <div className="place-change-inner">
+    <div className="score-change-inner">
       {roundedCurrentScore} {units}
       <svg
         className="icon"

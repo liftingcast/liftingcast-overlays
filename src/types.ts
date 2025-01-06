@@ -1,5 +1,5 @@
 export type LiftName = "squat" | "bench" | "dead";
-export type AttemptNumber = "1" | "2" | "3";
+export type AttemptNumber = "1" | "2" | "3" | "4";
 export type ClockState = "initial" | "started";
 
 export type RecordData = {
@@ -74,7 +74,7 @@ export type Lifters = Record<string, Lifter>;
 export type Attempt = {
   id: string;
   liftName: LiftName;
-  attemptNumber: string;
+  attemptNumber: AttemptNumber;
   lifter: {
     id: string;
   };
