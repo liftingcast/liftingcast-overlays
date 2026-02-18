@@ -128,10 +128,13 @@ export type Divisions = Record<
   }
 >;
 
+export type Teams = Record<string, { place: number; points: number }>;
+
 export type MeetApiResponse = {
   name: string;
   units: "KG" | "LBS" | null;
   lifters?: Lifters;
+  teams?: Teams;
   platforms?: Platform;
   divisions?: Divisions;
 };
